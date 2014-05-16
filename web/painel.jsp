@@ -19,7 +19,8 @@
             <li><h4>Painel</h4></li>
             <li><a href="admin/admin.jsp">Administrador</a></li>
             <li><a href="comum/comum.jsp">Comum</a></li>            
-            <li><% out.println(session.getAttribute("erro")); session.setAttribute("erro", ""); %></li>   
+            <li><%= session.getAttribute("erro")%> 
+                <% session.setAttribute("erro", ""); %></li>   
         </ul>
     </body>
 </html>

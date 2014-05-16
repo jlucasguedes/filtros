@@ -24,6 +24,7 @@
         </style>
     </head>
     <body>
+        <% session.setAttribute("erro", ""); %>
         <div class="tudo">
             <div class="formulario">
                 <form name="login" method="post" action="login">
